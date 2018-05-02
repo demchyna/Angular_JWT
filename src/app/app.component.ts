@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+///<reference path="../../node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts"/>
+import {Component, Input} from '@angular/core';
+import {AuthService} from './auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  title = 'Angular JWT';
+
+  constructor(private authService: AuthService) {}
 }
