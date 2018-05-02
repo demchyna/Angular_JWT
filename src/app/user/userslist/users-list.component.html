@@ -1,0 +1,25 @@
+<div>
+  <p>
+    List of registered users
+  </p>
+  <table border="1" style="margin: 0 auto">
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>E-mail</th>
+      <th>Create date</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.first_name}}</td>
+      <td>{{user.last_name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.password}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.create_date}}</td>
+    </tr>
+  </table>
+</div>
