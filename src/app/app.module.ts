@@ -12,7 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {AuthService} from './auth/auth.service';
 import {UserService} from './user/user.service';
 
-export const REST_API_URL = 'http://localhost:8080';
+export const REST_API_URL = 'http://localhost:4200';
 
 export function tokenGetter() {
   return sessionStorage.getItem('jwt-token');
@@ -24,7 +24,6 @@ export function tokenGetter() {
     HomeComponent,
     UsersListComponent,
     LoginComponent,
-
   ],
   imports: [
     BrowserModule,
